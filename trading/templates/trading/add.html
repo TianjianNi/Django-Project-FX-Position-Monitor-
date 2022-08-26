@@ -1,0 +1,7 @@
+<h1>Add Trade</h1>
+<form method="post">
+    {{form.as_p}}
+    {% csrf_token %}
+    <input type = 'submit' class="btn btn-primary" value="submit">
+    <a href="/trading/results">Back to lists of all trades</a>
+</form>

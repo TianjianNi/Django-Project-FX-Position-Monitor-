@@ -1,0 +1,14 @@
+{% if latest_trade_list %}
+    <ul>
+    {% for trade in latest_trade_list %}
+        <li><a href="/trading/{{ trade.id }}/">
+            Trade{{ trade.id }}:
+            {{ trade.currency }} 
+            {{ trade.buy_sell}} 
+            {{ trade.amount }} 
+        </a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No trades are available.</p>
+{% endif %}
