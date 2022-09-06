@@ -2,9 +2,16 @@ from django.db import models
 
 # Create your models here.
 CURRENCY_CHOICES = [
-    ('AUD', 'Australian dollar'),
-    ('CAD', 'Canadian dollar'),
+    ('AUD', 'Australian Dollar'),
+    ('CAD', 'Canadian Dollar'),
     ('EUR', 'Euro'),
+    ('JPY', 'Japanese Yen'),
+    ('NZD', 'New Zealand Dollar'),
+    ('NOK', 'Norwegian Krone'),
+    ('GBP', 'Pound Sterling'),
+    ('SEK', 'Swedish Krona'),
+    ('CHF', 'Swiss Franc'),
+    ('USD', 'United States Dollar'),
 ]
 
 BUY_SELL_CHOICES = [
